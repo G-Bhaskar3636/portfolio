@@ -5,12 +5,12 @@
     --line: #232B3A;
     --line-soft: #1A2130;
     --text: #E7EAEE;
-    --muted: #8D96A6;
-    --muted-2: #5C6577;
+    --muted: #d4d4d6;
+    --muted-2: #c3c6ca;
     --accent: #45D6C2;
     --accent-soft: rgba(69,214,194,0.10);
-    --accent-dim: rgba(69,214,194,0.35);
-    --signal: #F2B84B;
+    --accent-dim: rgba(40, 212, 189, 0.35);
+    --signal: #e7a222;
     --radius: 3px;
     --maxw: 940px;
   }
@@ -167,7 +167,7 @@
     border-color: var(--accent);
     font-weight: 600;
   }
-  .btn.primary:hover{ background: #5CE0CD; }
+  .btn.primary:hover{ background: #46e7cf; }
 
   .stats{
     display:grid;
