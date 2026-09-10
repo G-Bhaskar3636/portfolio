@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Gangapuram Bhaskar Goud</title>
+<meta name="description" content="Featured Data Science and AI projects by Gangapuram Bhaskar Goud.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="nav-id" style="text-decoration:none;">bhaskar<span>@</span>goud <span>~</span> portfolio</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html" style="color:var(--accent);border-bottom-color:var(--accent);">Projects</a></li>
+      <li><a href="architecture.html">Architecture</a></li>
+    </ul>
+    <a class="nav-cta" href="resume.pdf" id="resume-link">./resume.pdf</a>
+  </div>
+</header>
+
+<main>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Featured projects</h2>
+        <div class="section-tag">3 runs &middot; click to expand</div>
+      </div>
+
+      <div class="pipeline">
+
+        <div class="run">
+          <div class="run-marker"><div class="dot"></div></div>
+          <details class="card" open>
+            <summary>
+              <div class="run-heading">
+                <div class="run-idx">01 &middot; desktop assistant</div>
+                <h3 class="run-title">Jarvis DataScience</h3>
+                <p class="run-tagline">An agentic assistant that unifies AutoML, RAG, voice, and vision in one desktop app.</p>
+              </div>
+              <span class="run-status">shipped</span>
+              <span class="chevron">&#9656;</span>
+            </summary>
+            <div class="run-body">
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">LangChain</span>
+                <span class="tag">Groq Cloud</span><span class="tag">ChromaDB</span><span class="tag">Faster-Whisper</span>
+                <span class="tag">Scikit-learn</span>
+              </div>
+              <ul>
+                <li>One-click AutoML pipeline with automatic task detection and multi-model benchmarking (Random Forest, Gradient Boosting, Logistic/Linear Regression).</li>
+                <li>LangChain-based agent with long-term memory and RAG over ChromaDB and Sentence-Transformer embeddings.</li>
+                <li>Local speech-to-text (Faster-Whisper, VAD-filtered) with an explicit start/stop control that eliminates feedback loops during TTS playback.</li>
+                <li>Multi-modal vision module for OCR, object detection, and handwriting digitization.</li>
+              </ul>
+              <div class="run-links">
+                <a href="https://github.com/G-Bhaskar3636/jarvis_dataScience" target="_blank" rel="noopener">GitHub</a>
+                <a href="jarvis_architecture.html">Jarvis Architecture</a>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div class="run">
+          <div class="run-marker"><div class="dot"></div></div>
+          <details class="card">
+            <summary>
+              <div class="run-heading">
+                <div class="run-idx">02 &middot; time-series forecasting</div>
+                <h3 class="run-title">Electricity Demand Forecasting</h3>
+                <p class="run-tagline">Benchmarking 15+ forecasting models to cut error 10x against classical baselines.</p>
+              </div>
+              <span class="run-status">dockerized</span>
+              <span class="chevron">&#9656;</span>
+            </summary>
+            <div class="run-body">
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">LightGBM</span><span class="tag">LSTM / GRU</span>
+                <span class="tag">Streamlit</span><span class="tag">Docker</span>
+              </div>
+              <ul>
+                <li>Compared 15+ models across statistical, ML, and deep learning families &mdash; ARIMA, SARIMA, SARIMAX with Fourier terms, MSTL, Random Forest, XGBoost, LightGBM, LSTM, and GRU.</li>
+                <li>Reached 2.05% MAPE with LightGBM &mdash; a 10x improvement over ARIMA/SARIMA/Holt-Winters baselines.</li>
+                <li>Engineered lag, rolling-window, and calendar features with chronological train/validation/test splitting to prevent temporal leakage.</li>
+                <li>Deployed as a Dockerized, interactive Streamlit dashboard with a modular <span class="mono">src/</span> architecture.</li>
+              </ul>
+              <div class="run-links">
+                <a href="https://github.com/G-Bhaskar3636/electricity-demand-forecasting" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div class="run">
+          <div class="run-marker"><div class="dot"></div></div>
+          <details class="card">
+            <summary>
+              <div class="run-heading">
+                <div class="run-idx">03 &middot; open-source library</div>
+                <h3 class="run-title">Drift Monitoring Library</h3>
+                <p class="run-tagline">Watches production data for drift before models start failing quietly.</p>
+              </div>
+              <span class="run-status">published</span>
+              <span class="chevron">&#9656;</span>
+            </summary>
+            <div class="run-body">
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">SciPy</span>
+                <span class="tag">Pytest</span><span class="tag">GitHub Actions</span><span class="tag">PyPI</span>
+              </div>
+              <ul>
+                <li>Statistical drift, outlier, and data-quality detection across numerical and categorical features.</li>
+                <li>Configurable monitoring with automated HTML and console reporting.</li>
+                <li>42 automated tests at 85% coverage, with GitHub Actions CI running on every change.</li>
+                <li>Packaged and published to PyPI for pip-installable reuse across projects.</li>
+              </ul>
+              <div class="run-links">
+                <a href="https://pypi.org/project/drift-monitor-bhaskar/" target="_blank" rel="noopener">PyPI</a>
+                <a href="https://github.com/G-Bhaskar3636/drift_monitor" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </details>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="other-projects">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Other projects</h2>
+        <div class="section-tag">7 more &middot; click to expand</div>
+      </div>
+
+      <div class="other-grid">
+
+        <details class="other-card">
+          <summary>
+            <span class="other-cat">Multimodal &middot; GenAI</span>
+            <h3 class="other-title">Multimodal Caption Generator</h3>
+            <span class="chevron">&#9656;</span>
+          </summary>
+          <div class="other-body">
+            <p>Generates image captions and short stories in English, Hindi, and Telugu using Gemini's vision and generation APIs, with a RAG pipeline over ChromaDB for semantic search across caption history and an agentic chatbot that decides when to call image-analysis tools based on intent.</p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Gemini API</span>
+              <span class="tag">Groq API</span><span class="tag">Hugging Face</span><span class="tag">ChromaDB</span>
+            </div>
+            <div class="run-links">
+              <a href="https://github.com/G-Bhaskar3636/multimodal-caption-generator" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://multimodalcaptiongenerator.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </div>
+        </details>
+
+        <details class="other-card">
+          <summary>
+            <span class="other-cat">Deep Learning &middot; Computer Vision</span>
+            <h3 class="other-title">Face Mask Detection using VGG16</h3>
+            <span class="chevron">&#9656;</span>
+          </summary>
+          <div class="other-body">
+            <p>Binary classification web app using VGG16 transfer learning to detect mask usage &mdash; replaced dense layers, froze feature-extraction layers, and reached 98.35% test accuracy with 0.99 precision. Integrated real-time camera inference with OpenCV preprocessing.</p>
+            <div class="tags">
+              <span class="tag">TensorFlow/Keras</span><span class="tag">VGG16</span><span class="tag">OpenCV</span><span class="tag">Streamlit</span>
+            </div>
+            <div class="run-links">
+              <a href="https://github.com/G-Bhaskar3636/face_mask_detection" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://detectfacemask.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </div>
+        </details>
+
+        <details class="other-card">
+          <summary>
+            <span class="other-cat">NLP &middot; Machine Learning</span>
+            <h3 class="other-title">Email / SMS Spam Classifier</h3>
+            <span class="chevron">&#9656;</span>
+          </summary>
+          <div class="other-body">
+            <p>End-to-end NLP classification app predicting spam vs. legitimate messages at 97% accuracy and 99% precision, using Porter stemming, stopword removal, and TF-IDF vectorization paired with a Multinomial Naive Bayes classifier, serialized with pickle.</p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">NLTK</span><span class="tag">TF-IDF</span><span class="tag">Scikit-learn</span>
+            </div>
+            <div class="run-links">
+              <a href="https://github.com/G-Bhaskar3636/spam-detector" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://email-spamm.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </div>
+        </details>
+
+        <details class="other-card">
+          <summary>
+            <span class="other-cat">Data Engineering &middot; Analytics</span>
+            <h3 class="other-title">Advanced SQL Dashboard</h3>
+            <span class="chevron">&#9656;</span>
+          </summary>
+          <div class="other-body">
+            <p>Interactive business analytics dashboard connecting Python directly to a MySQL database &mdash; SQL queries extract KPIs and performance metrics, processed in Pandas and rendered as interactive Plotly charts in Streamlit.</p>
+            <div class="tags">
+              <span class="tag">MySQL</span><span class="tag">SQL</span><span class="tag">Pandas</span><span class="tag">Plotly</span><span class="tag">Streamlit</span>
+            </div>
+            <div class="run-links">
+              <a href="https://github.com/G-Bhaskar3636/Advance-SQL-Dashboard" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </details>
+
+        <details class="other-card">
+          <summary>
+            <span class="other-cat">EDA &middot; NLP</span>
+            <h3 class="other-title">WhatsApp Chat Analysis</h3>
+            <span class="chevron">&#9656;</span>
+          </summary>
+          <div class="other-body">
+            <p>Interactive textual analytics app that parses exported WhatsApp data &mdash; extracts temporal activity metrics, heatmaps, user rankings, word clouds, and emoji usage statistics using Matplotlib, Seaborn, and regex parsing.</p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Regex</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span>
+            </div>
+            <div class="run-links">
+              <a href="https://github.com/G-Bhaskar3636/whatsapp_chat_analysis" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://whatsapanalysischat.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </div>
+        </details>
+
+        <details class="other-card">
+          <summary>
+            <span class="other-cat">Recommendation Engines</span>
+            <h3 class="other-title">Book Recommendation System</h3>
+            <span class="chevron">&#9656;</span>
+          </summary>
+          <div class="other-body">
+            <p>Collaborative filtering engine using Nearest Neighbors and sparse matrices to recommend books from user rating patterns, merging user, rating, and metadata datasets into a dynamic Streamlit interface.</p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Sparse Matrices</span><span class="tag">Streamlit</span>
+            </div>
+            <div class="run-links">
+              <a href="https://github.com/G-Bhaskar3636/book_recommendations" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://bookrecommendersystemm.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </div>
+        </details>
+
+        <details class="other-card">
+          <summary>
+            <span class="other-cat">Data Analytics &middot; Visualization</span>
+            <h3 class="other-title">Olympic Games Data Analysis &amp; Visualization</h3>
+            <span class="chevron">&#9656;</span>
+          </summary>
+          <div class="other-body">
+            <p>Interactive app exploring 120 years of Olympic history with Streamlit, Pandas, and Plotly &mdash; dynamic multi-filter analysis of medal tallies, athlete physical attribute trends, and country performance histories, with a clean main.py / helper.py separation.</p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Plotly</span><span class="tag">Streamlit</span>
+            </div>
+            <div class="run-links">
+              <a href="https://github.com/G-Bhaskar3636/olympics_data_analysis" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://olympicsdatasetanalysis.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer id="contact-footer">
+    <div class="wrap">
+      <h2 class="foot-head">Let's build something.</h2>
+      <p class="foot-lede">Open to Data Science and AI Engineer roles — happy to walk through any project's architecture in more depth.</p>
+      <div class="foot-links">
+        <a class="btn primary" href="mailto:bhaskargoudgangapuram@gmail.com">bhaskargoudgangapuram@gmail.com</a>
+        <a class="btn" href="https://github.com/G-Bhaskar3636" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/gangapuram-bhaskar-goud-302722345/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="resume.pdf">Resume</a>
+      </div>
+      <div class="foot-bottom">
+        <span>Gangapuram Bhaskar Goud &middot; Hyderabad, India</span>
+        <span>built with a build pipeline in mind</span>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  document.querySelectorAll('.pipeline details').forEach(function(el){
+    el.addEventListener('toggle', function(){
+      if(el.open){
+        document.querySelectorAll('.pipeline details').forEach(function(other){
+          if(other !== el) other.open = false;
+        });
+      }
+    });
+  });
+
+  // Other Projects grid: clicking one card expands every card in the same visual row.
+  (function(){
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.other-card'));
+    cards.forEach(function(card){
+      card.addEventListener('toggle', function(){
+        if(card._syncing) return; // skip when this change came from a row-mate, not a real click
+        var top = Math.round(card.getBoundingClientRect().top);
+        var mates = cards.filter(function(c){
+          return c !== card && Math.round(c.getBoundingClientRect().top) === top;
+        });
+        mates.forEach(function(mate){
+          if(mate.open !== card.open){
+            mate._syncing = true;
+            mate.open = card.open;
+            mate._syncing = false;
+          }
+        });
+      });
+    });
+  })();
+</script>
+</body>
+</html>

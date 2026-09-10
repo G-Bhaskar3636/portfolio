@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Architecture — Gangapuram Bhaskar Goud</title>
+<meta name="description" content="MLOps and production architecture used across projects by Gangapuram Bhaskar Goud.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="nav-id" style="text-decoration:none;">bhaskar<span>@</span>goud <span>~</span> portfolio</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="architecture.html" style="color:var(--accent);border-bottom-color:var(--accent);">Architecture</a></li>
+    </ul>
+    <a class="nav-cta" href="resume.pdf" id="resume-link">./resume.pdf</a>
+  </div>
+</header>
+
+<main>
+
+  <section id="mlops">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Architecture &amp; MLOps</h2>
+        <div class="section-tag">from notebook to production</div>
+      </div>
+      <div class="flow">
+        <div class="flow-track">
+          <div class="flow-node"><div class="t">01 raw data</div><div class="d">Cleaning, profiling, quality scoring</div></div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-node"><div class="t">02 features</div><div class="d">Lag, rolling, calendar &amp; drift checks</div></div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-node"><div class="t">03 train &amp; evaluate</div><div class="d">Multi-model benchmarking</div></div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-node"><div class="t">04 test</div><div class="d">Pytest suite, GitHub Actions CI</div></div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-node"><div class="t">05 containerize</div><div class="d">Docker image</div></div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-node"><div class="t">06 ship</div><div class="d">Streamlit app / PyPI package</div></div>
+        </div>
+      </div>
+      <p class="flow-note">This is the same sequence I use across projects &mdash; the Drift Monitoring Library ships stages 03&ndash;06 as a CI-tested PyPI package, and the Forecasting pipeline runs the full sequence into a Dockerized dashboard.</p>
+    </div>
+  </section>
+
+</main>
+<footer id="contact-footer">
+    <div class="wrap">
+      <h2 class="foot-head">Let's build something.</h2>
+      <p class="foot-lede">Open to Data Science and AI Engineer roles — happy to walk through any project's architecture in more depth.</p>
+      <div class="foot-links">
+        <a class="btn primary" href="mailto:bhaskargoudgangapuram@gmail.com">bhaskargoudgangapuram@gmail.com</a>
+        <a class="btn" href="https://github.com/G-Bhaskar3636" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/gangapuram-bhaskar-goud-302722345/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="resume.pdf">Resume</a>
+      </div>
+      <div class="foot-bottom">
+        <span>Gangapuram Bhaskar Goud &middot; Hyderabad, India</span>
+        <span>built with a build pipeline in mind</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
